@@ -111,6 +111,9 @@ a{
 }
 .userinput {
     display: block;
+    position: relative;
+    text-align: center;
+    left: 4px;
     font-weight: bolder;
     margin-left: 10px;
     margin-top:10px;
@@ -159,12 +162,16 @@ a{
     margin-left: 10px;
     cursor: pointer;
     display: block;
+    position: relative;
+    left: 422px;
 
 }
 .inputbtn{
     border: 2px solid black;
     padding:10px 50px 10px 10px;
     margin-left: 10px;
+    position: relative;
+    left: 381px;
     margin-top: 20px;
     
 }
@@ -228,6 +235,7 @@ a{
     padding-top: 10px;
     border: none;
     cursor: pointer;
+    left: 410px;
     margin-top: 10px;
     margin-left: 10px;
     display: block;
@@ -242,6 +250,7 @@ a{
     text-shadow: none; 
     padding-bottom: 10px;
     padding-top: 10px;
+    left: 394px;
     border: none;
     cursor: pointer;
     margin-top: 1px;
@@ -288,6 +297,17 @@ a{
     padding-bottom: 10px;
     padding-top: 10px;
     border: none;
+    position: relative;
+    left: 402px;
     cursor: pointer;
     margin-left: 10px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#barcodeCanvas{
+    position: relative;
+    left: 413px;
 }
