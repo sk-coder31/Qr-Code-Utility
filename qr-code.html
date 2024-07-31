@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="unnamed.png">
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="header">
+            <h1 class="header-title">QR Code Generator</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="dropdown">
+                <div>
+                    <button class="qr-code-btn"><h3>QR Code Generator</h3></button>
+                </div>
+                <div>
+                    <button class="barcode-btn"><h3>Barcode Generator</h3></button>
+                </div>
+                
+            </div>
+            <div >
+                <h3 class="maintitle">Generate QR Codes effortlessly with our intuitive
+             interface. Access a free plan that never expires! Customize your QR Codes, track their
+              performance, and make informed decisions with ease.</h3>
+            </div>
+            <div class="wrapper">
+                <div class="image-wrapper">
+                    <img src="data-collection_2103581 (1).png" class="image1"/>
+                    <h3 class="maintitle">In-depth scan data
+                    Gain deeper insights into your QR Code performance. Visualize usage by device type, scans by country,
+                     and scans by city to refine your 
+                     QR Code marketing strategy effectively.</h3>
+                </div>
+                <div class="image-wrapper">
+                    <img src="advertising_1167960.png" class="image1"/>
+                    <h3 class="maintitle">Ad-free scanning
+                        Provide a seamless user experience without distracting ads, 
+                        ensuring users have a
+                         better experience in each scan.</h3>
+                </div>
+                <div class="image-wrapper">
+                    <img src="people_3239147.png" class="image1"/>
+                    <h3 class="maintitle">Multi-user collaboration
+                        Collaborate with up to five team members on the same dashboard.
+                         Create, manage, and share QR Code access 
+                        uninterruptedly across your team and organization.</h3>
+                </div>
+                <div class="image-wrapper">
+                    <img src="help-desk_4961736.png" class="image1"/>
+                    <h3 class="maintitle">Receive dedicated customer support for quick resolutions to issues or
+                         queries with your QR Codes and the platform.
+                         Keep your QR Code campaigns running smoothly and efficiently.</h3>
+                </div>
+            </div>
+            
+
+            <div class="displayover" id="displayover">
+                <label for="input" class="userinput">Enter your Message or link</label>
+                <input type="text" id="input" placeholder="Enter your Message" class="inputbtn">
+                <button id="get-data-url">Get Data URL</button>
+                <button class="close-btn">Close</button>
+                <canvas id="qrcode-canvas"></canvas>
+                <div class="image-container">
+                <img id="qrcode-image" alt="QR Code Image"/>
+                <button id="download-qr" class="downloadqr">Download QR Code</button>
+                </div>
+            </div>
+
+
+            <!-- barcode-section================= -->
+
+            <div class="displayoverbarcode" id="displayoverbarcode">
+                <form id="barcodeForm">
+                    <label for="barcodeData" class="userinput">Enter the message to barcode</label>
+                    <input type="text" id="barcodeData" name="barcodeData" class="inputbtn" required>
+                    <button type="submit" class="generate-barcode-btn">Generate Barcode</button>
+                </form>
+                <canvas id="barcodeCanvas"></canvas>
+               
+                <button class="close-btn-barcode">Close</button>
+                <button id="download-barcode" class="downloadbarcode">Download Barcode Code</button>
+            </form>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
